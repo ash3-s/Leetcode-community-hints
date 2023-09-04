@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leetcode Popup</title>
+    <style>
+      body {
+        width: 400px;
+        height: 300px;
+      }
+      .tabs {
+        display: flex;
+      }
+      .space {
+        padding-right: 30px;
+      }
+
+      .tab-content {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .active-tab {
+        display: flex;
+      }
+
+      #bbutton {
+        margin-top: 40px;
+        position: absolute;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tabs hidden">
+      <span class="tab active-tab space" data-tab="tab1">Hints</span>
+      <span class="tab" data-tab="tab2">Add Hints</span>
+
+      <div class="tab-content active-tab" id="tab1-content">
+        <p id="hint"></p>
+        <div id="bbutton"><button>Another Hint</button></div>
+      </div>
+      <form id="myForm">
+        <div class="tab-content" id="tab2-content">
+          <input
+            type="text"
+            name="field1"
+            id="inputTextbox"
+            placeholder="Enter something..."
+          />
+          <button type="submit" id="submitButton">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div id="message">Navigate to a Leetcode Problem.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>
