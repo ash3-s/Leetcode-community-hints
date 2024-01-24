@@ -8,12 +8,12 @@
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["activeTab", "tabs", "storage"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_icon": "untitled.png",
+    "default_icon": "logo.png",
     "default_popup": "index.html",
     "default_title": "Leetcode Community Hints"
   }
