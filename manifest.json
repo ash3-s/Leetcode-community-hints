@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Leetcode Community Hints",
   "version": "1.0",
+  "description": "Displays hints randomly from a diverse pool of user submissions",
   "content_scripts": [
     {
       "matches": ["https://leetcode.com/problems/*"],
